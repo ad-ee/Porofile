@@ -1,0 +1,298 @@
+<!-- Home | Restored Original Branding -->
+<!DOCTYPE html><html class="dark" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>deoga | Portfolio</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600;700&amp;family=Manrope:wght@400;500&amp;family=Geist:wght@500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed-dim": "#58d9d5",
+                    "on-background": "#e5e2e1",
+                    "error-container": "#93000a",
+                    "on-primary-fixed-variant": "#00504e",
+                    "surface-container-high": "#2a2a2a",
+                    "tertiary-container": "#999797",
+                    "on-tertiary-container": "#303030",
+                    "surface-container-lowest": "#0e0e0e",
+                    "inverse-primary": "#006a67",
+                    "surface-container-low": "#1c1b1b",
+                    "on-error": "#690005",
+                    "surface-bright": "#3a3939",
+                    "primary": "#58d9d5",
+                    "on-surface-variant": "#bbc9c8",
+                    "inverse-on-surface": "#313030",
+                    "error": "#ffb4ab",
+                    "tertiary-fixed-dim": "#c8c6c5",
+                    "tertiary-fixed": "#e5e2e1",
+                    "on-primary": "#003735",
+                    "on-primary-container": "#003635",
+                    "on-error-container": "#ffdad6",
+                    "surface-container-highest": "#353534",
+                    "inverse-surface": "#e5e2e1",
+                    "on-surface": "#e5e2e1",
+                    "on-tertiary-fixed": "#1c1b1b",
+                    "surface-tint": "#58d9d5",
+                    "surface": "#131313",
+                    "on-secondary-container": "#95c1be",
+                    "on-secondary-fixed-variant": "#234d4c",
+                    "outline": "#869392",
+                    "outline-variant": "#3c4948",
+                    "primary-fixed": "#78f6f1",
+                    "tertiary": "#c8c6c5",
+                    "background": "#131313",
+                    "surface-dim": "#131313",
+                    "surface-container": "#201f1f",
+                    "on-tertiary-fixed-variant": "#474746",
+                    "surface-variant": "#353534",
+                    "on-tertiary": "#313030",
+                    "on-primary-fixed": "#00201f",
+                    "on-secondary": "#063736",
+                    "secondary-fixed": "#beebe9",
+                    "primary-container": "#00a9a5",
+                    "secondary-fixed-dim": "#a3cfcd",
+                    "on-secondary-fixed": "#00201f",
+                    "secondary-container": "#25504e",
+                    "secondary": "#a3cfcd"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "margin-desktop": "64px",
+                    "container-max": "1280px",
+                    "stack-sm": "16px",
+                    "stack-md": "32px",
+                    "unit": "8px",
+                    "margin-mobile": "20px",
+                    "stack-lg": "80px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Manrope"],
+                    "label-sm": ["Geist"],
+                    "display-lg-mobile": ["Hanken Grotesk"],
+                    "label-md": ["Geist"],
+                    "headline-md": ["Hanken Grotesk"],
+                    "headline-lg": ["Hanken Grotesk"],
+                    "display-lg": ["Hanken Grotesk"],
+                    "body-md": ["Manrope"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "500"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "display-lg": ["72px", {"lineHeight": "80px", "letterSpacing": "-0.04em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #000000;
+            color: #e5e2e1;
+            scroll-behavior: smooth;
+        }
+        .glow-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background: radial-gradient(circle at 50% 50%, rgba(0, 169, 165, 0.05) 0%, transparent 70%);
+            z-index: -1;
+        }
+        .bento-card {
+            background: #080808;
+            border: 1px solid #1A1A1A;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .bento-card:hover {
+            border-color: #00A9A5;
+            box-shadow: inset 0 0 10px rgba(0, 169, 165, 0.05);
+            transform: translateY(-2px);
+        }
+        .text-glow {
+            text-shadow: 0 0 20px rgba(88, 217, 213, 0.3);
+        }
+    </style>
+</head>
+<body class="selection:bg-primary selection:text-on-primary">
+<div class="glow-overlay" style="background: radial-gradient(circle at 82.5% 11.8598%, rgba(0, 169, 165, 0.08) 0%, transparent 60%);"></div>
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-outline-variant/30">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-4">
+<div class="flex items-center gap-stack-sm"><img alt="Deoga Logo" class="h-8 w-8 object-contain" src="logo.png">
+<span class="font-headline-md text-headline-md font-bold text-on-surface uppercase tracking-tighter">deoga</span>
+</div>
+<div class="hidden md:flex items-center gap-gutter">
+<a class="font-label-md text-label-md text-primary font-bold border-b-2 border-primary pb-1" href="index.html">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors duration-300" href="profile.html">Profile</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors duration-300" href="contact.html">Contact</a>
+</div>
+<!-- Mobile Menu Icon (Visual Only) -->
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Hero / Summary Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-stack-lg transition-all duration-1000 opacity-100">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-8 flex flex-col justify-center">
+<div class="inline-flex items-center gap-2 mb-stack-sm">
+<span class="w-8 h-[1px] bg-primary"></span>
+<span class="font-label-sm text-label-sm text-primary uppercase">abundant enlightenment</span>
+</div>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-background mb-stack-md leading-tight">Advait&nbsp;<span class="text-primary text-glow">Deogade</span>&nbsp;<br></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">I specialize in crafting high-impact digital experiences that bridge the gap between technical mastery and refined aesthetics. My approach prioritizes structural precision and atmospheric depth for executive-level brands, underpinned by understanding in Python, Java, Bash, and HTML/CSS. I leverage intermediate-grade networking, Docker containerization orchestrated by Kubernetes, and RESTful APIs to build resilient architectures on Linux-based environments.</p>
+<div class="flex flex-wrap gap-stack-sm mt-stack-md">
+</div>
+</div>
+<div class="md:col-span-4 relative flex items-center justify-center"><div class="relative w-128 h-128 md:w-80 md:h-80 rounded-full overflow-hidden aspect-square"><img alt="Advait Deogade" class="w-128 h-128 object-cover scale-110 rounded-full aspect-square" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbJX6vOj-H9PiqJM78fIl2e6zBG6N5PoBPY-vQ2Mzk33a3fWRi1yRaknAp4FV_MoRMU4X4pA4YIQ7hNjtfVkYFgTY5FGMBFWzocFU7tysoOHRkGBGO94eW1xdnTuG1VhYgHU_cQcz-muEUNp6b_bPC-6kg5KlSS-OSJanVPNHqjErufLbcs5TaGXOO3QnU4aTDrdOJbjMH1TnTo6jvWbZQEmT6RBKpB2pMEcXR7QjQqPLm_zS53lj1OBq1Qo9G95M5-Kv7QBnuavs"></div></div>
+</div>
+</section>
+<!-- Featured Projects (Bento Grid) -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-stack-lg transition-all duration-1000 opacity-100">
+<div class="flex justify-between items-end mb-stack-md">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Get to Know Me</h2>
+<p class="font-label-md text-label-md text-on-surface-variant">Focusing on gaining some abilities and <span class="" style="letter-spacing: 0.7px;">experience</span>&nbsp;in search of knowledge and continuous growth&nbsp;</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 grid-rows-2 gap-stack-sm h-auto md:h-[800px]">
+<!-- Project 1: Large -->
+<a href="profile.html" class="md:col-span-8 md:row-span-2 bento-card rounded-lg overflow-hidden group relative block">
+<img class="w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700" data-alt="A cinematic, high-contrast photograph of a sophisticated dark-themed user interface on a curved ultra-wide monitor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBf3mZODt4s39ZxvGfjZAl6xBPNHIp0iDnnyNSrAkHxai9XNp_sZieDtxuUYM_9SqUdu-3J06jtS7x7uUOJXibxkPvGvwJgW10BLWbARm9NdO9V8uluaXEjyG7bwGbBdchDbpVEVs0XPrmvRpC1EYhr4fKxnwRT3thpKNBkRAlEjxmnS_CPxkuQYeMxTW5R5tNwJefRyyU3zzbJGtZSStUYEhMiVCuMMx3bbV_MJsH09cNAzDuUaSqRwTjlwdwNKOSV5VjiTkTfjWk">
+<div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-0 left-0 p-stack-md w-full">
+<div class="flex gap-2 mb-stack-sm">
+<span class="px-2 py-1 bg-surface-container-highest text-primary font-label-sm text-label-sm rounded">ADVAIT</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Profile</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg">Dedicated to growth and excellence</p>
+</div>
+</a>
+<!-- Project 2: Small -->
+<a href="https://github.com/" target="_blank" rel="noopener" class="md:col-span-4 bento-card rounded-lg overflow-hidden group relative block">
+<img alt="GitHub Project" class="w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700 scale-110 rounded-full aspect-square" src="Github.png">
+<div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+<div class="absolute bottom-0 left-0 p-stack-md">
+<h3 class="font-headline-md text-headline-md text-on-background">GitHub</h3>
+<p class="font-label-md text-label-md text-primary">Work and Repositories</p>
+</div>
+</a>
+<!-- Project 3: Small -->
+<a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="md:col-span-4 bento-card rounded-lg overflow-hidden group relative block">
+<div class="absolute inset-0 bg-[#080808] flex items-center justify-center"><img alt="LinkedIn" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-100 rounded-full aspect-square" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqwTQePAIVZDqvGK9Vopw0Fq7wSSO1qZ7EwhH7aNm7__goLTQ4h7OXZ7clKw5xH4BPw2hhhBbEcKVP7vjISSudXBM74LwKEh39XRrkAS7c0Rs4AKlAk2xcsVM5IrHlYNSfpKNdAGyDrfxvMTMPk87vhqxWqBKoWq1gxaNq_a4MZgnoyUR2y92yeKYDnA22GQ-_G08IwuwKnxi1Yz-1NBS3TFb9HRKZkzMRqCFD2awvwHi5xBsqYCllXS41P3bUb-0rptj3zp3FTvU"><div class="absolute top-0 right-0 p-stack-md opacity-70"><svg class="w-8 h-8 fill-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg></div></div>
+<div class="absolute bottom-0 left-0 p-stack-md">
+<h3 class="font-headline-md text-headline-md text-on-background">Linkedin</h3>
+<p class="font-label-md text-label-md text-primary">Connect with me and explore</p>
+</div>
+</a>
+</div>
+</section>
+<!-- Expertise Section -->
+<section class="bg-surface-container-lowest py-stack-lg transition-all duration-1000 opacity-100">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="md:col-span-1">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-stack-sm">Experience</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Core idles driving the deoga methodology.</p>
+</div>
+<div class="md:col-span-3 grid grid-cols-1 sm:grid-cols-3 gap-gutter"><div class="p-stack-md border-l border-outline-variant/30">
+<span class="material-symbols-outlined text-primary mb-stack-sm">code</span>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-2">Technical Insight</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Driven by curiosity, continuously developing diverse skills and gaining experience across multiple disciplines.</p>
+</div>
+<div class="p-stack-md border-l border-outline-variant/30">
+<span class="material-symbols-outlined text-primary mb-stack-sm">palette</span>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-2">Visual Precision</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Exploring opportunities to learn, innovate, and gain experience.</p>
+</div>
+<div class="p-stack-md border-l border-outline-variant/30">
+<span class="material-symbols-outlined text-primary mb-stack-sm">strategy</span>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-2">Strategy</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Demonstrating adaptability through multidisciplinary skills, projects, and achievements.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg text-center transition-all duration-1000 opacity-100">
+</section>
+</main>
+<!-- Footer -->
+<section class="bg-surface py-stack-lg transition-all duration-1000 opacity-100">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-stack-sm">Communicate</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md">Always Open for Opportunities, Discussions and Projects</p>
+<div class="flex justify-center">
+<a class="inline-flex items-center justify-center px-8 py-3 bg-primary text-on-primary font-label-md text-label-md rounded-lg hover:bg-primary-container transition-colors duration-300" href="contact.html">
+        Contact
+      </a>
+</div>
+</div>
+</section><footer class="w-full py-12 bg-background border-t border-outline-variant/20">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop gap-stack-sm">
+<div class="flex flex-col items-center md:items-start gap-2">
+<div class="flex items-center gap-2"><img alt="Deoga Logo" class="h-6 w-6 object-contain" src="logo.png">
+<span class="font-label-md text-label-md font-bold text-on-surface">Deoga</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-tertiary-fixed-variant">© 2024 deoga. All rights reserved.</p>
+</div>
+<div class="flex gap-stack-md">
+<a class="font-label-sm text-label-sm text-on-tertiary-fixed-variant hover:text-primary transition-colors" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+<a class="font-label-sm text-label-sm text-on-tertiary-fixed-variant hover:text-primary transition-colors" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+</div>
+</div>
+</footer>
+<script>
+        // Smooth reveal on scroll interaction
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+
+        // Interactive Glow Effect
+        document.addEventListener('mousemove', (e) => {
+            const glow = document.querySelector('.glow-overlay');
+            const x = (e.clientX / window.innerWidth) * 100;
+            const y = (e.clientY / window.innerHeight) * 100;
+            glow.style.background = `radial-gradient(circle at ${x}% ${y}%, rgba(0, 169, 165, 0.08) 0%, transparent 60%)`;
+        });
+    </script>
+
+
+</body></html>
