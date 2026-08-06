@@ -210,12 +210,13 @@
 <div class="glass-card p-stack-md md:p-12 rounded-xl relative overflow-hidden">
 <!-- Subtle background pattern for form -->
 <div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(#58d9d5 1px, transparent 1px); background-size: 24px 24px;"></div>
-<form class="relative z-10 space-y-gutter" id="contactForm">
+<form class="relative z-10 space-y-gutter" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
 <div class="space-y-2">
 <label class="font-label-md text-label-md text-on-surface-variant" for="name">Name</label>
 <input class="w-full bg-[#121212] border border-[#1A1A1A] rounded-lg px-4 py-3 font-body-md text-on-surface transition-all placeholder:text-[#666666]" id="name" name="name" placeholder="Your Name" type="text" required>
 </div>
+ <input type="hidden" name="access_key" value="82e49619-d45c-43c6-b6f5-aed65547eba5">
 <div class="space-y-2">
 <label class="font-label-md text-label-md text-on-surface-variant" for="email">Email</label>
 <input class="w-full bg-[#121212] border border-[#1A1A1A] rounded-lg px-4 py-3 font-body-md text-on-surface transition-all placeholder:text-[#666666]" id="email" name="email" placeholder="User Email" type="email" required>
@@ -227,7 +228,7 @@
 </div>
 <div class="space-y-2">
 <label class="font-label-md text-label-md text-on-surface-variant" for="message">Message</label>
-<textarea class="w-full bg-[#121212] border border-[#1A1A1A] rounded-lg px-4 py-3 font-body-md text-on-surface transition-all placeholder:text-[#666666] resize-none" id="message" name="message" placeholder="Describe" rows="5" required></textarea>
+<textarea class="w-full bg-[#121212] border border-[#1A1A1A] rounded-lg px-4 py-3 font-body-md text-on-surface transition-all placeholder:text-[#666666] resize-none" id="message" name="message" placeholder="Describe" rows="15" required></textarea>
 </div>
 <button class="w-full bg-[#00A9A5] hover:bg-[#008f8b] text-black font-label-md text-label-md py-4 rounded-lg flex items-center justify-center gap-2 transition-all active:scale-[0.98] group" type="submit">
                 Send Message
